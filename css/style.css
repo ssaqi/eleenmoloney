@@ -4,6 +4,16 @@ body {
     padding: 0px;
 }
 
+
+.bg-img {
+
+    background-image: url(../Assests/image\ \(2\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    padding: 0px;
+}
+
 .nav-link {
 
     margin-left: 20px;
@@ -35,6 +45,7 @@ body {
 
     font-size: 54px;
     font-weight: 600;
+    margin-top: 20px;
 }
 
 .txt {
@@ -46,6 +57,43 @@ body {
 
 }
 
+
+.button {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background: rgb(141, 49, 49);
+    padding: 15px 40px;
+    border-radius: 4px;
+    font-weight: normal;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 5px 15px rgb(141, 49, 49);
+  }
+  
+  .glow-button:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgb(209, 91, 91);
+  }
+
+
+
+  .buttons {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background: rgb(104, 144, 255);
+    padding: 15px 30px;
+    border-radius: 4px;
+    font-weight: normal;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 5px 15px rgb(104, 144, 255);
+    margin-top: 20px;
+  }
+  
+  .glow-buttons:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgb(82, 115, 207);
+  }
 
 .icon_div {
 
@@ -105,12 +153,47 @@ body {
 
 .book {
     width: 49%;
-    height: 400px;
+    height: 460px;
     margin-left: 200px;
 }
 
 
+
+.hero-image {
+
+    top: 0;
+    left: 0;
+    width: 49%;
+    height: 460px;
+    margin-left: 200px;
+    animation: upDown 3s infinite ease-in-out;
+}
+
+@keyframes upDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px); /* Adjust the value as needed */
+    }
+}
+
+.res_div{
+
+
+    display: flex !important;
+    margin-top: 18rem;
+}
+
+
+
 @media only screen and (max-width: 600px) {
+
+    .bg-img{
+
+
+         height: auto;
+    }
     .h22 {
 
         font-size: 22px;
@@ -127,6 +210,8 @@ body {
           flex-direction: column;
           align-items: center;
           justify-content: space-between;
+          margin-top: 1rem;
+          
     }
     .icon_div{
 
@@ -147,7 +232,17 @@ body {
 
     .book{
 
-         width: 100%;
-         margin-left: 0px;
+        width: 85%;
+        margin-left: 26px;
+    }
+
+    .hero-image{
+        top: 0;
+        left: 0;
+        width: 66%;
+        height: 338px;
+        margin-left: 59px;
+        animation: upDown 3s infinite ease-in-out;
+
     }
 }
