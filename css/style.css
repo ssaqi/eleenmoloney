@@ -2,6 +2,7 @@ body {
 
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
 }
 
 
@@ -22,24 +23,13 @@ body {
 
 .line {
 
-    width: 150px;
+    width: 250px;
     height: 5px;
-    background-color: black;
+    background-color: #56A063;
 }
 
 
-.shape {
 
-    /* position: relative; */
-    height: 400px;
-    background-color: rgb(141, 49, 49);
-    clip-path: polygon(100% 5%, 100% 100%, 0 100%, 0 28%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    /* Ensure content does not spill outside */
-}
 
 .h22 {
 
@@ -61,18 +51,18 @@ body {
 .button {
     text-decoration: none;
     color: rgb(255, 255, 255);
-    background: rgb(141, 49, 49);
-    padding: 15px 40px;
+    background: #56A063;
+    padding: 6px 20px;
     border-radius: 4px;
     font-weight: normal;
     text-transform: uppercase;
     transition: all 0.2s ease-in-out;
-    box-shadow: 0 5px 15px rgb(141, 49, 49);
+    box-shadow: 0 5px 15px rgb(34, 107, 12);
   }
   
   .glow-button:hover {
     color: rgba(255, 255, 255, 1);
-    box-shadow: 0 5px 15px rgb(209, 91, 91);
+    box-shadow: 0 5px 15px rgb(19, 82, 0);
   }
 
 
@@ -114,14 +104,27 @@ body {
 
 .footer {
 
-    height: 400px;
-    background-color: rgb(141, 49, 49);
-    clip-path: polygon(100% 5%, 100% 100%, 0 100%, 0 28%);
+    height: 800px;
+    background-color: rgb(44, 42, 42);
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
 
+}
+
+.phone-img{
+
+     width: 100%;
+     height: 100%;
+     background-image: url('../Assests/phon3.png');
+     background-size: cover;
+}
+
+
+.form-setting{
+
+     margin-top: 160px;
 }
 
 .btnnn {
@@ -149,14 +152,24 @@ body {
 .book_img{
 
       margin-left: 10px;
+      
 }
 
 .book {
-    width: 49%;
-    height: 460px;
+   
+    width: 65%;
+    height: 550px;
     margin-left: 200px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
+.book1 {
+    width: 65%;
+    height: 550px;
+    margin-left: 60px;
+    margin-top: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
 
 
 .hero-image {
@@ -186,8 +199,79 @@ body {
 }
 
 
+.crd_testimonel{
+
+       height: 200px;
+       background-color: #56A063;
+}
+
+.carousel img {
+    width: 70px;
+    max-height: 70px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    overflow: hidden;
+  }
+  .carousel-inner {
+    padding: 1em;
+  }
+  
+  @media screen and (min-width: 576px) {
+    .carousel-inner {
+      display: flex;
+      width: 90%;
+      margin-inline: auto;
+      padding: 1em 0;
+      overflow: hidden;
+    }
+    .carousel-item {
+      display: block;
+      margin-right: 0;
+      flex: 0 0 calc(100% / 2);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .carousel-item {
+      display: block;
+      margin-right: 0;
+      flex: 0 0 calc(100% / 3);
+    }
+  }
+  .carousel .card {
+    margin: 0 0.5em;
+    border: 0;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 3rem;
+    height: 3rem;
+    background-color: grey;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .imgs{
+
+     height: 60%;
+  }
+
+
+  .icon1{
+
+      width: 50px;
+      height: 50px;
+      background-color: #56A063;
+      border-radius: 50%;
+    
+  }
 
 @media only screen and (max-width: 600px) {
+
+    html, body {
+        overflow-x: hidden;
+      }
 
     .bg-img{
 
@@ -233,9 +317,20 @@ body {
     .book{
 
         width: 85%;
+        height: 400px;
         margin-left: 26px;
     }
 
+
+    .book1 {
+ 
+         display: none;
+        /* width: 65%;
+        height: 550px;
+        margin-left: 60px;
+        margin-top: 50px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    }
     .hero-image{
         top: 0;
         left: 0;
@@ -244,5 +339,10 @@ body {
         margin-left: 59px;
         animation: upDown 3s infinite ease-in-out;
 
+    }
+
+    .setting{
+
+          margin-top: 125px;
     }
 }
